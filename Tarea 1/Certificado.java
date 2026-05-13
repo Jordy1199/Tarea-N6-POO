@@ -1,18 +1,11 @@
 package tarea1;
 
-/**
- * Clase Certificado
- * Representa un certificado académico emitido por la institución.
- * Implementa el contrato Imprimible.
- */
 public class Certificado implements Imprimible {
 
-    // Atributos propios del certificado (encapsulados)
     private String nombreEstudiante;
     private String carrera;
     private int numeroDocumento;
 
-    // Constructor
     public Certificado(String nombreEstudiante, String carrera, int numeroDocumento) {
         if (nombreEstudiante == null || nombreEstudiante.isEmpty()) {
             throw new IllegalArgumentException("El nombre del estudiante no puede estar vacío.");
@@ -25,15 +18,10 @@ public class Certificado implements Imprimible {
         this.numeroDocumento = numeroDocumento;
     }
 
-    // Getters
     public String getNombreEstudiante() { return nombreEstudiante; }
     public String getCarrera()          { return carrera; }
     public int getNumeroDocumento()     { return numeroDocumento; }
 
-    /**
-     * Implementación del contrato Imprimible.
-     * Muestra la información del certificado académico.
-     */
     @Override
     public void imprimir() {
         System.out.println("========================================");

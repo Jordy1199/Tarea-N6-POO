@@ -1,19 +1,12 @@
 package tarea1;
 
-/**
- * Clase ActaNotas
- * Representa el acta de notas de un estudiante en un período académico.
- * Implementa el contrato Imprimible.
- */
 public class ActaNotas implements Imprimible {
 
-    // Atributos propios (encapsulados)
     private String nombreEstudiante;
     private String periodoAcademico;
     private double promedio;
     private int numeroDocumento;
 
-    // Constructor
     public ActaNotas(String nombreEstudiante, String periodoAcademico, double promedio, int numeroDocumento) {
         if (promedio < 0 || promedio > 10) {
             throw new IllegalArgumentException("El promedio debe estar entre 0 y 10.");
@@ -27,16 +20,11 @@ public class ActaNotas implements Imprimible {
         this.numeroDocumento = numeroDocumento;
     }
 
-    // Getters
     public String getNombreEstudiante() { return nombreEstudiante; }
     public String getPeriodoAcademico() { return periodoAcademico; }
     public double getPromedio()         { return promedio; }
     public int getNumeroDocumento()     { return numeroDocumento; }
 
-    /**
-     * Implementación del contrato Imprimible.
-     * Muestra el acta de notas con el promedio del estudiante.
-     */
     @Override
     public void imprimir() {
         System.out.println("========================================");
