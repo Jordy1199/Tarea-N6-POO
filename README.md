@@ -79,6 +79,7 @@ A lo largo del proyecto se trabajaron los siguientes conceptos de forma práctic
 **Encapsulamiento:** todos los atributos de las clases son `private`, accesibles únicamente a través de constructores y getters, protegiendo el estado interno del objeto.
 
 **Responsabilidad única:** cada interfaz tiene un propósito claro y definido. La interfaz declara, la clase implementa, y el Main prueba — sin mezclar responsabilidades.
+[Video explicando la tarea] (https://epnecuador.sharepoint.com/:v:/s/yoparayo/IQA2BxXSrZTQTLEPlXWFXQz7AXVoBx-k2YFTDJqcExaxRhk?e=X8fe9j&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 ---
 
